@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <CustomList />
+        <CustomList items={["Item 1", "Item 2", "Item 3"]} />
         <a
           className="App-link"
           href="https://reactjs.org"

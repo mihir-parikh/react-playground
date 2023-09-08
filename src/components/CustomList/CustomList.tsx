@@ -1,10 +1,9 @@
 import React from "react";
 
-const CustomList = () => {
+const CustomList = ({ items }) => {
   return (
     <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
+      {items.map((item, i) => <li key={i}>{item}</li>)}
     </ul>
   );
 }
