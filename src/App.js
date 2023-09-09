@@ -1,21 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 import CustomList from './components/CustomList/CustomList.tsx';
+import Navbar from './components/Navbar/Navbar.tsx';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <CustomList items={["Item 1", "Item 2", "Item 3"]} />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Navbar />
+        <Routes>
+          <Route path="/custom-list" element={<CustomList items={["Item 1", "Item 2", "Item 3"]} />} />
+        </Routes>
       </header>
     </div>
   );
