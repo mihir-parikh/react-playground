@@ -5,11 +5,15 @@ import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" data-testid="app">
       <header className="App-header">
         <Navbar />
         <Routes>
-          <Route path="/custom-list" element={<CustomList items={["Item 1", "Item 2", "Item 3"]} />} />
+          <Route 
+            path="/custom-list" 
+            element={<CustomList items={["Item 1", "Item 2", "Item 3"]} />} 
+            data-testid="custom-list"
+          />
         </Routes>
       </header>
     </div>
