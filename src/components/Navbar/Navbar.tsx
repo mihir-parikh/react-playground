@@ -8,7 +8,9 @@ const Navbar = () => {
                 <Link to="/" style={{ color: 'grey' }}>
                     Home
                 </Link>
-                &nbsp;&nbsp;
+            </li>
+            <br />
+            <li>
                 <Link to="/custom-list" style={{ color: 'grey' }}>
                     Custom List
                 </Link>
