@@ -1,9 +1,7 @@
-import React from "react";
-
 const CustomList = ({ items }) => {
   return (
     <ul>
-      {items.map((item, i) => <li key={i}>{item}</li>)}
+      {items.map((item, index) => <li key={index}>{item}</li>)}
     </ul>
   );
 }
