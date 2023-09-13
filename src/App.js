@@ -2,6 +2,7 @@ import './App.css';
 import CustomList from './components/CustomList/CustomList.tsx';
 import Navbar from './components/Navbar/Navbar.tsx';
 import Counter from './components/Counter/Counter.tsx';
+import ToggleGreeting from './components/ToggleGreeting/ToggleGreeting.tsx';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -19,6 +20,11 @@ function App() {
             path="/counter" 
             element={<Counter />} 
             data-testid="counter"
+          />
+          <Route 
+            path="/toggle-greeting" 
+            element={<ToggleGreeting />} 
+            data-testid="toggle-greeting"
           />
         </Routes>
       </header>
