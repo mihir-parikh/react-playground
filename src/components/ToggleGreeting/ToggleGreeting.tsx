@@ -1,13 +1,14 @@
 import { useState } from "react";
-import Greeting from "./Greeting/Greeting";
 
 const ToggleGreeting = () => {
-    const [ isActive, setIsActive ] = useState(false);
+    // Store the data in a data store
+    const [ visibility, setVisibility ] = useState(false);
 
     return (
         <div>
-            <button onClick={() => setIsActive(!isActive)}>Toggle</button>
-            <Greeting isActive={isActive} />
+            {/* When there is a change in the state data, the component will be re-rendered */}
+            <button onClick={() => setVisibility(!visibility)}>Toggle an Element</button>
+            {visibility && <h4>Hello World</h4>}
         </div>
     );
 };

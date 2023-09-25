@@ -14,6 +14,10 @@ const Navbar = () => {
             <li>
                 <Link to="/counter" style={{ color: 'grey' }}>Counter</Link>
             </li>
+            <br />
+            <li>
+                <Link to="/toggle-greeting" style={{ color: 'grey' }}>Toggle Greeting</Link>
+            </li>
         </ul>
     );
 };
