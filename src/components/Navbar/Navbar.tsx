@@ -18,6 +18,10 @@ const Navbar = () => {
             <li>
                 <Link to="/toggle-greeting" style={{ color: 'grey' }}>Toggle Greeting</Link>
             </li>
+            <br />
+            <li>
+                <Link to="/reverse-string" style={{ color: 'grey' }}>Reverse String</Link>
+            </li>
         </ul>
     );
 };

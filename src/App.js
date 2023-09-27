@@ -3,6 +3,7 @@ import CustomList from './components/CustomList/CustomList.tsx';
 import Navbar from './components/Navbar/Navbar.tsx';
 import Counter from './components/Counter/Counter.tsx';
 import ToggleGreeting from './components/ToggleGreeting/ToggleGreeting.tsx';
+import ReverseString from './components/ReverseString/ReverseString.tsx';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -25,6 +26,11 @@ function App() {
             path="/toggle-greeting" 
             element={<ToggleGreeting />} 
             data-testid="toggle-greeting"
+          />
+          <Route 
+            path="/reverse-string" 
+            element={<ReverseString />} 
+            data-testid="reverse-string"
           />
         </Routes>
       </header>
