@@ -22,6 +22,10 @@ const Navbar = () => {
             <li>
                 <Link to="/reverse-string" style={{ color: 'grey' }}>Reverse String</Link>
             </li>
+            <br />
+            <li>
+                <Link to="/github-user" style={{ color: 'grey' }}>Github User</Link>
+            </li>
         </ul>
     );
 };

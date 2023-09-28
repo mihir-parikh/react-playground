@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar.tsx';
 import Counter from './components/Counter/Counter.tsx';
 import ToggleGreeting from './components/ToggleGreeting/ToggleGreeting.tsx';
 import ReverseString from './components/ReverseString/ReverseString.tsx';
+import GithubUser from './components/GithubUser/GithubUser.tsx';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -31,6 +32,11 @@ function App() {
             path="/reverse-string" 
             element={<ReverseString />} 
             data-testid="reverse-string"
+          />
+          <Route 
+            path="/github-user" 
+            element={<GithubUser />} 
+            data-testid="github-user"
           />
         </Routes>
       </header>
